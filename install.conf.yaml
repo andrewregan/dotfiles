@@ -4,6 +4,6 @@
 - shell:
     - mkdir -p ~/.ssh
     - cp .ssh/authorized_keys ~/.ssh/authorized_keys 
-    - chmod g-rwx ~/.ssh -R
-    - chmod o-rwx ~/.ssh -R
-    - chmod u+rwx ~/.ssh -R
+    - chmod 744 ~/.ssh
+    - chmod 644 ~/.ssh/* -R
+    - chmod 600 ~/.ssh/id_rsa
