@@ -1,9 +1,10 @@
 - clean: ['~']
-- link: 
+- link:
     ~/.vimrc: src/vimrc
+    ~/.zshrc: src/zshrc
 - shell:
     - mkdir -p ~/.ssh
-    - cp src/ssh/authorized_keys ~/.ssh/authorized_keys 
+    - cp src/ssh/authorized_keys ~/.ssh/authorized_keys
     - chmod 744 ~/.ssh
     - chmod 644 ~/.ssh/* -R
     - chmod 600 ~/.ssh/id_rsa
