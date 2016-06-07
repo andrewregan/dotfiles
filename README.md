@@ -17,24 +17,19 @@ then I recommend forking that repository.
 Install
 -------
 
-To install this onto your system *see warnings above!*
+Before installing this onto your system *see warnings above!*
 
-Before installing:
 ```bash
+# before installing
 sudo apt-get update; sudo apt-get install vim curl git zsh
-```
 
-Install:
-```bash
 # clone repository
 git clone https://github.com/andrewregan/.dotfiles ~/.dotfiles
 
 # dotbot install
 ~/.dotfiles/install
-```
 
-Additional setup:
-```bash
+# additional setup
 ~/.dotfiles/extra
 ```
 
