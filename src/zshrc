@@ -83,5 +83,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# set vim as default editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+# display distro information
+screenfetch

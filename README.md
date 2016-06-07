@@ -21,7 +21,7 @@ Before installing this onto your system *see warnings above!*
 
 ```bash
 # before installing
-sudo apt-get update; sudo apt-get install vim curl git zsh
+sudo apt-get update; sudo apt-get install git curl vim zsh screenfetch
 
 # clone repository
 git clone https://github.com/andrewregan/.dotfiles ~/.dotfiles
