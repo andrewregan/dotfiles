@@ -28,9 +28,6 @@ git clone https://github.com/andrewregan/.dotfiles ~/.dotfiles
 
 # dotbot install
 ~/.dotfiles/install
-
-# additional setup
-~/.dotfiles/extra
 ```
 
 License
