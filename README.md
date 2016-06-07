@@ -1,40 +1,42 @@
-Dotfiles Template
-=================
+Dotfiles
+========
 
-This is a template repository for bootstrapping your dotfiles with [Dotbot][dotbot].
+This is my dotfiles repository that contains configuration files for my linux
+systems.  Since this is to be used by myself, there may be hardcoded strings,
+so this repo probably shouldn't be used by you without modification.
 
-To get started, you can [fork][fork] this repository (and probably delete this
-README and rename your version to something like just `dotfiles`).
+If you decide to use this as a dotfiles template, then keep in mind that
+***this repo installs ssh keys*** onto the system!  Before using it, make
+sure to change the `src/ssh/authorized_keys` file, or you could be inadvertently
+***giving my computers access to your system!***
 
-In general, you should be using symbolic links for everything, and using git
-submodules whenever possible.
+This repository uses [Dotbot][dotbot], if you want to set up your own dotfiles,
+then I recommend forking that repository.
 
-To keep submodules at their proper versions, you could include something like
-`git submodule update --init --recursive` in your `install.conf.yaml`.
 
-To upgrade your submodules to their latest versions, you could periodically run
-`git submodule update --init --remote`.
+Install
+-------
 
-Inspiration
------------
+To install this onto your system *see warnings above!*
 
-If you're looking for inspiration for how to structure your dotfiles or what
-kinds of things you can include, you could take a look at some repos using
-Dotbot.
+Before installing:
+```bash
+sudo apt-get update; sudo apt-get install vim curl git zsh
+```
 
-* [anishathalye's dotfiles][anishathalye_dotfiles]
-* [csivanich's dotfiles][csivanich_dotfiles]
-* [m45t3r's dotfiles][m45t3r_dotfiles]
-* [alexwh's dotfiles][alexwh_dotfiles]
-* [azd325's dotfiles][azd325_dotfiles]
-* [bluekeys' dotfiles][bluekeys_dotfiles]
-* [wazery's dotfiles][wazery_dotfiles]
-* [thirtythreeforty's dotfiles][thirtythreeforty_dotfiles]
+Install:
+```bash
+# clone repository
+git clone https://github.com/andrewregan/.dotfiles ~/.dotfiles
 
-And there are about [700 more here][dotbot-users].
+# dotbot install
+~/.dotfiles/install
+```
 
-If you're using Dotbot and you'd like to include a link to your dotfiles here
-as an inspiration to others, please submit a pull request.
+Additional setup:
+```bash
+~/.dotfiles/extra
+```
 
 License
 -------
@@ -42,17 +44,4 @@ License
 This software is hereby released into the public domain. That means you can do
 whatever you want with it without restriction. See `LICENSE.md` for details.
 
-That being said, I would appreciate it if you could maintain a link back to
-Dotbot (or this repository) to help other people discover Dotbot.
-
 [dotbot]: https://github.com/anishathalye/dotbot
-[fork]: https://github.com/anishathalye/dotfiles_template/fork
-[anishathalye_dotfiles]: https://github.com/anishathalye/dotfiles
-[csivanich_dotfiles]: https://github.com/csivanich/dotfiles
-[m45t3r_dotfiles]: https://github.com/m45t3r/dotfiles
-[alexwh_dotfiles]: https://github.com/alexwh/dotfiles
-[azd325_dotfiles]: https://github.com/Azd325/dotfiles
-[bluekeys_dotfiles]: https://github.com/bluekeys/.dotfiles
-[wazery_dotfiles]: https://github.com/wazery/dotfiles
-[thirtythreeforty_dotfiles]: https://github.com/thirtythreeforty/dotfiles
-[dotbot-users]: https://github.com/anishathalye/dotbot/wiki/List-of-Dotbot-Users
