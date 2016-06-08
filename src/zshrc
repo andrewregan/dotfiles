@@ -88,4 +88,5 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # display distro information
+echo ""
 screenfetch
