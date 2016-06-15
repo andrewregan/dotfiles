@@ -1,10 +1,16 @@
 - clean: ['~']
-- link:
-    ~/.vimrc: src/vimrc
-    ~/.zshrc: src/zshrc
 - shell:
     - mkdir -p ~/.ssh
     - cp src/ssh/authorized_keys ~/.ssh/authorized_keys
     - chmod 744 ~/.ssh
     - chmod 644 ~/.ssh/* -R
     - (chmod 600 ~/.ssh/id_rsa || :)
+- shell:
+    - mkdir -p ~/.gnupg
+    - cp src/gnupg/gpg.conf ~/.gnupg/gpg.conf
+    - cp src/gnupg/sks-keyservers.netCA.pem ~/.gnupg/sks-keyservers.netCA.pem
+    - chmod 700 ~/.gnupg
+    - chmod 600 ~/.gnupg/* -R
+- link:
+    ~/.vimrc: src/vimrc
+    ~/.zshrc: src/zshrc
