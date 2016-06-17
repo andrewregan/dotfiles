@@ -13,7 +13,8 @@ fi
 
 # install tools
 sudo apt-get update
-sudo apt-get install git curl vim zsh screenfetch gnupg-curl
+sudo apt-get install git curl vim zsh gnupg-curl -y
+sudo apt-get install screenfetch -y
 
 # clone dotfiles
 git clone https://github.com/andrewregan/dotfiles ~/.dotfiles
@@ -23,7 +24,7 @@ git clone https://github.com/andrewregan/dotfiles ~/.dotfiles
 
 
 # install additional tools
-sudo apt-get install ranger htop ufw
+sudo apt-get install ranger htop ufw -y
 
 
 # done
