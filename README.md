@@ -35,7 +35,11 @@ Quick Install
 -------------
 
 ```bash
-adduser james; gpasswd -a james sudo; runuser -l james -c 'curl -s https://raw.githubusercontent.com/andrewregan/dotfiles/master/script/droplet-setup.sh | bash'
+# add new user
+adduser james; gpasswd -a james sudo; su james
+
+# quick setup
+curl -s https://raw.githubusercontent.com/andrewregan/dotfiles/master/script/droplet-setup.sh | bash
 ```
 
 
