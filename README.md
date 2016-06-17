@@ -30,6 +30,15 @@ git clone https://github.com/andrewregan/dotfiles ~/.dotfiles
 ~/.dotfiles/install
 ```
 
+
+Quick Install
+-------------
+
+```bash
+adduser james; gpasswd -a james sudo; runuser -l james -c 'curl -s https://raw.githubusercontent.com/andrewregan/dotfiles/master/script/droplet-setup.sh | bash'
+```
+
+
 License
 -------
 
