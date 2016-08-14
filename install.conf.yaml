@@ -14,3 +14,4 @@
 - link:
     ~/.vimrc: src/vimrc
     ~/.zshrc: src/zshrc
+    ~/.zsh: src/zsh
