@@ -20,7 +20,7 @@ set autoread
 set number
 
 " Set to automatically indent lines.
-set autoindent
+"set autoindent
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
