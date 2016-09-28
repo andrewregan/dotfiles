@@ -24,7 +24,7 @@ Before installing this onto your system *see warnings above!*
 sudo apt-get update; sudo apt-get install git curl vim zsh screenfetch gnupg-curl
 
 # clone repository
-git clone https://github.com/andrewregan/dotfiles ~/.dotfiles
+git clone https://github.com/jnwarp/dotfiles ~/.dotfiles
 
 # dotbot install
 ~/.dotfiles/install
@@ -39,7 +39,7 @@ Quick Install
 adduser james; gpasswd -a james sudo; su james
 
 # quick setup
-curl -s https://raw.githubusercontent.com/andrewregan/dotfiles/master/script/droplet-setup.sh | bash
+curl -s https://raw.githubusercontent.com/jnwarp/dotfiles/master/script/droplet-setup.sh | bash
 ```
 
 
