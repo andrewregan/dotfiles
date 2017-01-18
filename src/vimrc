@@ -20,7 +20,7 @@ set autoread
 set number
 
 " Set to automatically indent lines.
-"set autoindent
+set autoindent
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -86,7 +86,8 @@ set shiftwidth=4
 set tabstop=4
 
 " Use spaces instead of tabs
-set expandtab
+"set expandtab
+set noexpandtab
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -97,3 +98,12 @@ map <C-r> <C-W>r
 
 " Typing qq is the same as pressing escape.
 imap qq <Esc>
+
+" Automatically run the C program when rr is pressed
+map rr :w<CR> :!clear; make<CR> :!./%<<CR>
+
+" Clean the working directory when cc is pressed
+map cc :w<CR> :!clear; make clean<CR>
+
+" Git commit and push when mm is pressed
+map mm :w<CR> :!clear; git add --all; git commit<CR>
