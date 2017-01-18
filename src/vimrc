@@ -99,11 +99,19 @@ map <C-r> <C-W>r
 " Typing qq is the same as pressing escape.
 imap qq <Esc>
 
-" Automatically run the C program when rr is pressed
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Programming shortcuts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" rr = RUN program
 map rr :w<CR> :!clear; make<CR> :!./%<<CR>
 
-" Clean the working directory when cc is pressed
+" cc = Clean the working
 map cc :w<CR> :!clear; make clean<CR>
 
-" Git commit and push when mm is pressed
+" mm = Git commit
 map mm :w<CR> :!clear; git add --all; git commit<CR>
+
+" pp = Git commit and push
+map pp :w<CR> :!clear; git add --all; git commit; git push<CR>
