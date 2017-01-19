@@ -113,5 +113,5 @@ map cc :w<CR> :!clear; make clean<CR>
 " mm = Git commit
 map mm :w<CR> :!clear; git add --all; git commit<CR>
 
-" pp = Git commit and push
-map pp :w<CR> :!clear; git add --all; git commit; git push<CR>
+" pp = Git pull / push
+map pp :w<CR> :!clear; git pull; git push<CR>
