@@ -12,6 +12,7 @@
     - chmod 700 ~/.gnupg
     - chmod 600 ~/.gnupg/* -R
 - link:
+    ~/.gitconfig: src/gitconfig
     ~/.vimrc: src/vimrc
     ~/.zshrc: src/zshrc
     ~/.zsh: src/zsh
