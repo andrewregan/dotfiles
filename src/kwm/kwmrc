@@ -1,0 +1,2 @@
+# default values for screen padding (top bottom left right)
+kwmc config padding 20 20 20 20

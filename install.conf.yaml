@@ -16,3 +16,4 @@
     ~/.zshrc: src/zshrc
     ~/.zsh: src/zsh
     ~/.yaourtrc: src/yaourtrc
+	~/.kwm/kwmrc: src/kwm/kwmrc
