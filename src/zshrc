@@ -93,5 +93,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # display distro information
 echo ""
-#screenfetch -t
-#echo ""
+if [[ -n $SSH_CONNECTION ]]; then
+  screenfetch -t
+  echo ""
+fi
