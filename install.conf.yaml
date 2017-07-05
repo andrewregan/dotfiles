@@ -11,9 +11,12 @@
     - cp src/gnupg/sks-keyservers.netCA.pem ~/.gnupg/sks-keyservers.netCA.pem
     - chmod 700 ~/.gnupg
     - chmod 600 ~/.gnupg/* -R
+- shell:
+    - mkdir -p ~/.kwm
 - link:
     ~/.gitconfig: src/gitconfig
     ~/.vimrc: src/vimrc
     ~/.zshrc: src/zshrc
     ~/.zsh: src/zsh
     ~/.yaourtrc: src/yaourtrc
+    ~/.kwm/kwmrc: src/kwm/kwmrc
