@@ -28,6 +28,9 @@ git clone https://github.com/jnwarp/dotfiles ~/.dotfiles
 
 # dotbot install
 ~/.dotfiles/install
+
+# set up ssh key
+ssh-keygen -t rsa -b 4096 -C "james@jnwarp.com portland"
 ```
 
 
