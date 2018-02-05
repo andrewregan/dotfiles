@@ -14,9 +14,6 @@
 - shell:
     - mkdir -p ~/.kwm
     - mkdir -p ~/.config/i3
-- shell:
-    - sudo cp i3lock-fancy/lock /usr/local/bin
-    - sudo cp i3lock-fancy/icons /usr/local/bin/icons -r
 - link:
     ~/.gitconfig: src/gitconfig
     ~/.vimrc: src/vimrc
