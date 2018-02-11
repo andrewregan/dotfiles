@@ -13,7 +13,9 @@
     - chmod 600 ~/.gnupg/* -R
 - shell:
     - mkdir -p ~/.kwm
-    - mkdir -p ~/.config/i3
+- shell:
+    - ln -s ~/.dotfiles/src/config/i3 ~/.config/i3
+    - ln -s ~/.dotfiles/src/config/polybar ~/.config/polybar
 - link:
     ~/.gitconfig: src/gitconfig
     ~/.vimrc: src/vimrc
@@ -21,4 +23,3 @@
     ~/.zsh: src/zsh
     ~/.yaourtrc: src/yaourtrc
     ~/.kwm/kwmrc: src/kwm/kwmrc
-    ~/.config/i3/config: src/config/i3/config
