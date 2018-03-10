@@ -21,7 +21,7 @@ Before installing this onto your system *see warnings above!*
 
 ```bash
 # before installing
-sudo apt-get update; sudo apt-get install git curl vim zsh screenfetch gnupg-curl
+sudo apt-get update; sudo apt-get install git curl vim zsh screenfetch
 
 # clone repository
 git clone https://github.com/jnwarp/dotfiles ~/.dotfiles
@@ -30,7 +30,7 @@ git clone https://github.com/jnwarp/dotfiles ~/.dotfiles
 ~/.dotfiles/install
 
 # set up ssh key
-ssh-keygen -t rsa -b 4096 -C "james@jnwarp.com portland"
+ssh-keygen -t rsa -b 4096 -C "james@jnwarp.com `hostname`"
 ```
 
 
