@@ -14,9 +14,9 @@
 - shell:
     - mkdir -p ~/.kwm
     - mkdir -p ~/.config
-- shell:
-    - ln -s ~/.dotfiles/src/config/i3 ~/.config/i3
-    - ln -s ~/.dotfiles/src/config/polybar ~/.config/polybar
+- link:
+    ~/.config/i3: ~/.dotfiles/src/config/i3
+    ~/.config/polybar: ~/.dotfiles/src/config/polybar
 - link:
     ~/.gitconfig: src/gitconfig
     ~/.vimrc: src/vimrc
@@ -24,3 +24,4 @@
     ~/.zsh: src/zsh
     ~/.yaourtrc: src/yaourtrc
     ~/.kwm/kwmrc: src/kwm/kwmrc
+    ~/.gdbinit: src/gdbinit
