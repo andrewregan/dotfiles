@@ -33,6 +33,11 @@ git clone https://github.com/jnwarp/dotfiles ~/.dotfiles
 ssh-keygen -t rsa -b 4096 -C "james@jnwarp.com `hostname`"
 ```
 
+Extra goodies
+```bash
+sudo apt install breeze-cursor-theme preload
+```
+
 
 Quick Install
 -------------
