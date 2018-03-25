@@ -13,6 +13,10 @@
     - chmod 600 ~/.gnupg/* -R
 - shell:
     - mkdir -p ~/.kwm
+    - mkdir -p ~/.config
+- link:
+    ~/.config/i3: ~/.dotfiles/src/config/i3
+    ~/.config/polybar: ~/.dotfiles/src/config/polybar
 - link:
     ~/.gitconfig: src/gitconfig
     ~/.vimrc: src/vimrc
@@ -20,3 +24,4 @@
     ~/.zsh: src/zsh
     ~/.yaourtrc: src/yaourtrc
     ~/.kwm/kwmrc: src/kwm/kwmrc
+    ~/.gdbinit: src/gdbinit

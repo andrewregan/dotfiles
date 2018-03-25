@@ -83,6 +83,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias dog="cat"
+alias commit="git add --all; git commit; git push"
 
 # set vim as default editor
 export VISUAL=vim
@@ -95,7 +97,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 echo ""
 export PATH="$PATH:$HOME/.rvm/bin"
 if [[ -n $SSH_CONNECTION ]]; then
-  screenfetch -t
+  neofetch
   echo ""
 fi
 
