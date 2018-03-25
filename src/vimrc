@@ -116,12 +116,3 @@ map mm :w<CR> :!clear; git add --all; git commit<CR>
 " pp = Git pull / push
 map pp :w<CR> :!clear; git pull; git push<CR>
 
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Linux Kernel Development
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-set tabstop=8
-set softtabstop=8
-set shiftwidth=8
-set noexpandtab
