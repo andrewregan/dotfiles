@@ -13,8 +13,9 @@ fi
 
 # install tools
 sudo apt-get update
-sudo apt-get install git curl vim zsh gnupg-curl -y
-sudo apt-get install screenfetch -y
+for i in git curl vim zsh screenfetch; do
+  sudo apt-get install $i -y
+done
 
 # clone dotfiles
 git clone https://github.com/jnwarp/dotfiles ~/.dotfiles
@@ -24,8 +25,14 @@ git clone https://github.com/jnwarp/dotfiles ~/.dotfiles
 
 
 # install additional tools
-sudo apt-get install ranger htop ufw -y
+for i in ranger htop; do
+  sudo apt-get install $i -y
+done
 
+# install system changing items
+for i in preload fail2ban; do
+  sudo apt-get install $i -y
+done
 
 # done
 echo Setup is complete, please log in as the new user!
