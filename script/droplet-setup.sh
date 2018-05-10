@@ -17,13 +17,6 @@ for i in git curl vim zsh screenfetch; do
   sudo apt-get install $i -y
 done
 
-# clone dotfiles
-git clone https://github.com/jnwarp/dotfiles ~/.dotfiles
-
-# dotbot install
-~/.dotfiles/install
-
-
 # install additional tools
 for i in ranger htop; do
   sudo apt-get install $i -y
@@ -33,6 +26,12 @@ done
 for i in preload fail2ban; do
   sudo apt-get install $i -y
 done
+
+# clone dotfiles
+git clone https://github.com/jnwarp/dotfiles ~/.dotfiles
+
+# dotbot install
+~/.dotfiles/install
 
 # done
 echo Setup is complete, please log in as the new user!
