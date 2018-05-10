@@ -35,7 +35,7 @@ ssh-keygen -t rsa -b 4096 -C "james@jnwarp.com `hostname`"
 
 Extra goodies
 ```bash
-sudo apt-get install breeze-cursor-theme preload -y
+sudo apt-get install breeze-cursor-theme numix-icon-theme arc-theme preload -y
 ```
 
 Vmware goodies
@@ -53,6 +53,13 @@ adduser james; gpasswd -a james sudo; su james
 
 # quick setup
 curl -s https://raw.githubusercontent.com/jnwarp/dotfiles/master/script/droplet-setup.sh | bash
+```
+
+XFCE Settings
+-------------
+
+```bash
+# menu: xfce4-popup-whiskermenu
 ```
 
 
