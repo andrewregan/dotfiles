@@ -10,28 +10,26 @@ else
   echo Root account disabled!
 fi
 
-
 # install tools
 sudo apt-get update
-for i in git curl vim zsh screenfetch; do
-  sudo apt-get install $i -y
-done
+sudo apt-get upgrade -y
+sudo apt-get install git curl vim zsh screenfetch -y
 
 # install additional tools
-for i in ranger htop; do
-  sudo apt-get install $i -y
-done
+sudo apt-get install ranger htop -y
 
 # install system changing items
-for i in preload fail2ban; do
-  sudo apt-get install $i -y
-done
+sudo apt-get install preload fail2ban -y
 
 # clone dotfiles
 git clone https://github.com/jnwarp/dotfiles ~/.dotfiles
 
 # dotbot install
 ~/.dotfiles/install
+
+# set up ssh key
+ssh-keygen -t rsa -b 4096 -C "james@jnwarp.com `hostname`"
+cat ~/.ssh/id_rsa.pub
 
 # done
 echo Setup is complete, please log in as the new user!
