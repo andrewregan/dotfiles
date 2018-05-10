@@ -21,7 +21,7 @@ Before installing this onto your system *see warnings above!*
 
 ```bash
 # before installing
-sudo apt-get update; sudo apt-get install git curl vim zsh screenfetch
+sudo apt-get update; sudo apt-get install git curl vim zsh screenfetch -y
 
 # clone repository
 git clone https://github.com/jnwarp/dotfiles ~/.dotfiles
@@ -35,7 +35,12 @@ ssh-keygen -t rsa -b 4096 -C "james@jnwarp.com `hostname`"
 
 Extra goodies
 ```bash
-sudo apt install breeze-cursor-theme preload
+sudo apt-get install breeze-cursor-theme preload -y
+```
+
+Vmware goodies
+```bash
+sudo apt-get install open-vm-tools open-vm-tools-desktop -y
 ```
 
 
@@ -47,6 +52,7 @@ Quick Install
 adduser james; gpasswd -a james sudo; su james
 
 # quick setup
+#curl -s https://git.io/vp1i6 | bash
 curl -s https://raw.githubusercontent.com/jnwarp/dotfiles/master/script/droplet-setup.sh | bash
 ```
 
