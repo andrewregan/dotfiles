@@ -52,7 +52,6 @@ Quick Install
 adduser james; gpasswd -a james sudo; su james
 
 # quick setup
-#curl -s https://git.io/vp1i6 | bash
 curl -s https://raw.githubusercontent.com/jnwarp/dotfiles/master/script/droplet-setup.sh | bash
 ```
 
