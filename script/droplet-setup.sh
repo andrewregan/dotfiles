@@ -27,9 +27,6 @@ git clone https://github.com/jnwarp/dotfiles ~/.dotfiles
 # dotbot install
 ~/.dotfiles/install
 
-# set up ssh key
-ssh-keygen -t rsa -b 4096 -C "james@jnwarp.com `hostname`"
-cat ~/.ssh/id_rsa.pub
-
 # done
-echo Setup is complete, please log in as the new user!
+echo Setup is complete, please log in as the new user and run the commands below!
+echo '~/.dotfiles/install; ssh-keygen -t rsa -b 4096 -C "james@jnwarp.com \`hostname\`"; cat ~/.ssh/id_rsa.pub'
