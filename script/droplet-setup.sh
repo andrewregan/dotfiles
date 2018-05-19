@@ -13,10 +13,11 @@ fi
 # install tools
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install git curl vim zsh screenfetch -y
+sudo apt-get install git curl vim zsh -y
 
 # install additional tools
 sudo apt-get install ranger htop -y
+sudo apt-get install neofetch screenfetch -y
 
 # install system changing items
 sudo apt-get install preload fail2ban -y
@@ -29,4 +30,4 @@ git clone https://github.com/jnwarp/dotfiles ~/.dotfiles
 
 # done
 echo Setup is complete, please log in as the new user and run the commands below!
-echo '~/.dotfiles/install; ssh-keygen -t rsa -b 4096 -C "james@jnwarp.com \`hostname\`"; cat ~/.ssh/id_rsa.pub'
+echo '~/.dotfiles/install; ssh-keygen -t rsa -b 4096 -C "james@jnwarp.com `hostname`"; cat ~/.ssh/id_rsa.pub'
