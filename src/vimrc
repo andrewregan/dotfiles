@@ -101,18 +101,15 @@ imap qq <Esc>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Programming shortcuts
+" => Shortcuts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" rr = RUN program
-map rr :w<CR> :!clear; make<CR> :!./%<<CR>
+" gp = Git commit & push
+map gp :w<CR> :!clear; git add --all; git commit; git push<CR>
 
-" cc = Clean the working
-map cc :w<CR> :!clear; make clean<CR>
+" gc = Git commit
+map gc :w<CR> :!clear; git add --all; git commit<CR>
 
-" mm = Git commit
-map mm :w<CR> :!clear; git add --all; git commit<CR>
-
-" pp = Git pull / push
-map pp :w<CR> :!clear; git pull; git push<CR>
-
+" W = write with sudo
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+command Wq :execute ':silent w !sudo tee % > /dev/null' | :q!
