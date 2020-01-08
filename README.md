@@ -47,12 +47,24 @@ sudo apt-get install open-vm-tools open-vm-tools-desktop -y
 Quick Install
 -------------
 
+### Ubuntu
+
 ```bash
 # add new user
 adduser james; gpasswd -a james sudo; su james
 
 # quick setup
 curl -s https://raw.githubusercontent.com/jnwarp/dotfiles/master/script/droplet-setup.sh | bash
+```
+
+### CentOS
+
+```bash
+# add new user
+adduser james; gpasswd -a james wheel; su james
+
+# quick setup
+curl -s https://raw.githubusercontent.com/jnwarp/dotfiles/master/script/centos-setup.sh | bash
 ```
 
 XFCE Settings
