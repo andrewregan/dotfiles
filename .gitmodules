@@ -6,7 +6,7 @@
 	url = https://github.com/robbyrussell/oh-my-zsh
 [submodule "src/zsh/zsh-autosuggestions"]
 	path = src/zsh/zsh-autosuggestions
-	url = git://github.com/zsh-users/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule "i3lock-fancy"]
 	path = i3lock-fancy
 	url = https://github.com/meskarune/i3lock-fancy
