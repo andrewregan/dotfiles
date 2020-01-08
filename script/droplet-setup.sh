@@ -7,6 +7,7 @@ if [ $EUID == 0 ]; then
   exit
 else
   sudo passwd -l root
+  sudo bash -c "echo > /root/.ssh/authorized_keys"
   echo Root account disabled!
 fi
 
