@@ -12,7 +12,7 @@ else
 fi
 
 # install tools
-sudo dnf update
+sudo dnf update -y
 sudo dnf upgrade -y
 sudo dnf install git curl vim zsh -y
 
