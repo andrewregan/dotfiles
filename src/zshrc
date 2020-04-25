@@ -98,6 +98,7 @@ echo ""
 export PATH="$PATH:$HOME/.rvm/bin"
 if [[ -n $SSH_CONNECTION ]]; then
   neofetch
+  df -h /
   echo ""
 fi
 
