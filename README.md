@@ -74,6 +74,12 @@ XFCE Settings
 # menu: xfce4-popup-whiskermenu
 ```
 
+Update Dotbot
+-------------
+
+```bash
+git submodule update --remote
+```
 
 License
 -------
