@@ -67,14 +67,6 @@ adduser james; gpasswd -a james wheel; su james
 curl -s https://raw.githubusercontent.com/jnwarp/dotfiles/master/script/centos-setup.sh | bash
 ```
 
-### Windows 10
-```batch
-# disable terminal bell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-if (!(Test-Path -Path "$Profile")) {New-Item -ItemType File -Path "$Profile" -Force}
-Add-Content -Value "Set-PSReadlineOption -BellStyle None" -Path "$Profile"
-```
-
 XFCE Settings
 -------------
 
