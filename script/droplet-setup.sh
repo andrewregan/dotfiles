@@ -21,7 +21,7 @@ sudo apt-get install ranger htop -y
 sudo apt-get install neofetch screenfetch -y
 
 # install system changing items
-sudo apt-get install preload fail2ban -y
+sudo apt-get install fail2ban -y
 
 # clone dotfiles
 git clone https://github.com/jnwarp/dotfiles ~/.dotfiles
