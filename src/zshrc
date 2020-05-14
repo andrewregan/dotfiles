@@ -106,3 +106,6 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# fix home / end
+bindkey  "^[[1~"   beginning-of-line
+bindkey  "^[[4~"   end-of-line
